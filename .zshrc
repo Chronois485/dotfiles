@@ -80,6 +80,7 @@ alias vim='nvim'
 alias c='clear'
 alias cat='bat'
 alias cd='z'
+alias py3='python3'
 
 # Shell integrations
 eval "$(fzf --zsh)"
