@@ -4,7 +4,13 @@
   "position": "top",
   "spacing": 0,
   "height": 26,
-  "modules-left": ["custom/omarchy", "hyprland/workspaces"],
+  "modules-left": 
+  [
+    "custom/omarchy",
+    "hyprland/workspaces",
+    "cpu",
+    "memory"
+  ],
   "modules-center": ["clock", "custom/update", "custom/screenrecording-indicator"],
   "modules-right": [
     "group/tray-expander",
@@ -12,7 +18,6 @@
     "bluetooth",
     "network",
     "pulseaudio",
-    "cpu",
     "battery"
   ],
   "hyprland/workspaces": {
@@ -55,8 +60,12 @@
 
   "cpu": {
     "interval": 5,
-    "format": "󰍛",
+    "format": " : {usage}%",
     "on-click": "$TERMINAL -e btop"
+  },
+  "memory": {
+    "interval": 5,
+    "format": " : {percentage}%"
   },
   "clock": {
     "format": "{:L%A %H:%M}",
