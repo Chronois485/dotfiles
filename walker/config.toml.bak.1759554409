@@ -58,10 +58,7 @@ switcher_only = true
 hidden = true
 
 [builtins.clipboard]
-name = "Clipboard history"
-prefix = "~"
-icon = ""
-hidden = false
+hidden = true
 
 [builtins.commands]
 hidden = true
@@ -75,10 +72,8 @@ icon = ""
 prefix = ":"
 
 [builtins.symbols]
-name = "Symbols"
-prefix = "@"
-icon = ""
-hidden = false
+after_copy = ""
+hidden = true
 
 [builtins.finder]
 use_fd = true
@@ -98,15 +93,11 @@ hidden = true
 hidden = true
 
 [builtins.websearch]
-name = "Search in Internet"
+name = "Browse"
 icon = ""
 prefix = "+"
+switcher_only = true
 hidden = false
 
 [builtins.translation]
-name = "Translate to English"
-icon = ""
-prefix = "*"
-hidden = false
-
-
+hidden = true
