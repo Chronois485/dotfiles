@@ -1,23 +1,36 @@
-echo "Creating backups..."
+# instalation script for my config
 
-cp ~/.config/nvim ./nvim.bak -r
-cp ~/.zshrc ./.zshrc.bak -r
-cp ~/.config/omarchy ./omarchy.bak -r
-cp ~/.config/walker ./walker.bak -r
-cp ~/.config/waybar ./waybar.bak -r
-cp ~/.config/hypr ./hypr.bak -r
+echo "Making backups..."
+
+cp ~/.config/hypr ./hypr.bakup
+cp ~/.config/nvim ./nvim.bakup
+cp ~/.config/omarchy ./omarchy.bakup
+cp ~/.config/walker ./walker.bakup
+cp ~/.config/waybar ./waybar.bakup
+cp ~/.zshrc ./zshrc.bakup
 
 echo "Deleting old config..."
 
-rm ~/.config/nvim ~/.config/omarchy ~/.config/walker/config.toml ~/.config/waybar/config.jsonc ~/.zshrc ~/.config/hypr -r
+rm ~/.config/hypr
+rm ~/.config/nvim
+rm ~/.config/omarchy
+rm ~/.config/walker
+rm ~/.config/waybar
+rm ~/.zshrc
 
-echo "Applying new config..."
+echo "Replacing it with new config..."
 
-cp ./nvim ~/.config/ -r
-cp ./.zshrc ~/.zshrc -r
-cp ./omarchy ~/.config/ -r
-cp ./walker ~/.config/ -r
-cp ./waybar ~/.config/ -r
-cp ./hypr ~/.config/ -r
+cp ./hypr ~/.config/hypr
+cp ./nvim ~/.config/nvim
+cp ./omarchy ~/.config/omarchy
+cp ./walker ~/.config/walker
+cp ./waybar ~/.config/waybar
+cp ./zshrc ~/.zshrc
 
-echo "Everything is done!"
+echo "Changing your shell to zsh..."
+
+chsh $USER -s /bin/zsh
+
+echo "Done!"
+
+echo "Please reboot your pc to complete changes"

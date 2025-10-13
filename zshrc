@@ -147,7 +147,8 @@ eval $(thefuck --alias)
 . "$HOME/.local/share/../bin/env"
 
 # PATH VARIABLES
-    export PATH="$PATH:/opt/balena-etcher"
+export PATH="$PATH:/opt/balena-etcher"
+export PATH="$PATH:/opt/Telegram"
 
 figlet -f slant -t -c "CHRONOiS"
 figlet -f smslant -t -c '" i " is silent'
