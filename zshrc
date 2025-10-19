@@ -81,6 +81,7 @@ alias c='clear'
 alias cat='bat'
 alias cd='z'
 alias py3='python3'
+alias open='xdg-open'
 
 # Shell integrations
 eval "$(fzf --zsh)"
