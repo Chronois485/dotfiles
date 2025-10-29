@@ -1,0 +1,1 @@
+/home/chronois/.config/omarchy/current/theme/neovim.lua
