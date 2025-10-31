@@ -96,11 +96,18 @@
 }
 
 #system {
-  background-color:  alpha(@background, 0.5);
+  background-color: alpha(@background, 0.5);
   margin-left: 7px;
   padding-left: 6px;
   padding-right: 7px;
   border-radius: 10px;
+}
+
+#mpris {
+  background-color: alpha(@background, 0.5);
+  border-radius: 10px;
+  padding: 0 10px;
+  font-size: 13px;
 }
 
 #custom-expand-icon {
@@ -109,7 +116,7 @@
 }
 
 #tray-expander {
-  background-color:  alpha(@background, 0.5);
+  background-color: alpha(@background, 0.5);
   border-radius: 10px;
   margin-right: 3px;
 }
@@ -122,6 +129,9 @@ tooltip {
 
 #custom-update {
   font-size: 10px;
+  background-color: alpha(@background, 0.5);
+  border-radius: 10px;
+  padding: 0 10px;
 }
 
 .hidden {
@@ -132,6 +142,9 @@ tooltip {
   min-width: 12px;
   margin-left: 8.75px;
   font-size: 10px;
+  background-color: alpha(@background, 0.5);
+  border-radius: 10px;
+  padding: 0 10px;
 }
 
 #custom-screenrecording-indicator.active {

@@ -19,7 +19,7 @@
     "orientation": "horizontal",
     "modules": ["pulseaudio", "bluetooth", "network", "battery"]
   },
-  "modules-center": ["clock#calendar", "custom/update", "custom/screenrecording-indicator"],
+  "modules-center": ["mpris", "custom/update", "custom/screenrecording-indicator"],
   "modules-right": [
     "hyprland/language",
     "group/tray-expander",
@@ -75,15 +75,11 @@
     "format": " : {percentage}%",
     "on-click": "$TERMINAL -e btop"
   },
-  "clock#calendar": {
-    "format": "{:L%d.%m.%Y}",
-    "tooltip-format": "{calendar}",
-    "on-click-right": "omarchy-launch-floating-terminal-with-presentation omarchy-tz-select"
-  },
   "clock": {
     "format": "  {:L%H:%M:%S}",
+    "format-alt": "  {:L%d.%m.%Y}",
     "interval": 1,
-    "tooltip": false
+    "tooltip-format": "  {:L%d.%m.%Y   %H:%M:%S}"
   },
   "network": {
     "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
@@ -166,5 +162,16 @@
   },
   "custom/spacer-workspaces-system": {
     "format": " "
+  },
+  "mpris": {
+  	"format": "{player_icon} {artist} - {title}",
+	  "format-paused": "{status_icon}  {artist} - {title}",
+  	"player-icons": {
+  		"default": "▶",
+  		"mpv": "🎵"
+  	},
+	  "status-icons": {
+		  "paused": "⏸"
+  	}
   }
 }
