@@ -108,6 +108,7 @@
   border-radius: 10px;
   padding: 0 10px;
   font-size: 13px;
+  margin-right: 10px;
 }
 
 #custom-expand-icon {
@@ -123,7 +124,7 @@
 
 tooltip {
   padding: 2px;
-  background-color: rgba(18, 18, 24, 0.7);
+  background-color: alpha(@background, 0.7);
   border-radius: 10px;
 }
 
