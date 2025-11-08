@@ -171,8 +171,9 @@
     "format": "{status_icon} {dynamic}",
     "dynamic-order": ["artist", "title"],
     "status-icons": {
-		  "paused": "⏸ ",
-      "playing": "▶"
-  	}
+		  "paused": "▶",
+      "playing": "⏸"
+  	},
+    "max-length": 40
   }
 }
