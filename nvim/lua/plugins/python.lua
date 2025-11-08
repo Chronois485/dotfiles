@@ -1,34 +1,45 @@
 -- lua/plugins/python.lua
+-- Підтримка Python із LazyVim-friendly conform.nvim, DAP і neotest
+
 return {
-  -- Python LSP
+  -- Python LSP (через Mason)
   {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
-        pyright = {}, -- або basedpyright якщо хочеш
+        pyright = {}, -- або basedpyright, якщо хочеш новішу версію
       },
     },
   },
 
-  -- Форматування (black + isort)
+  -- Форматування через conform.nvim (не чіпаємо config, тільки opts)
   {
     "stevearc/conform.nvim",
-    opts = {
-      formatters_by_ft = {
-        python = { "black", "isort" },
-      },
-    },
+    optional = true,
+    opts = function(_, opts)
+      opts.formatters_by_ft = opts.formatters_by_ft or {}
+      opts.formatters_by_ft.python = { "isort", "black" }
+
+      opts.format_on_save = opts.format_on_save or {}
+      opts.format_on_save.lsp_fallback = true
+      opts.format_on_save.timeout_ms = 5000
+    end,
   },
 
-  -- Debugger
+  -- Debugger (через mason-nvim-dap)
   {
     "mfussenegger/nvim-dap",
     dependencies = {
       "mfussenegger/nvim-dap-python",
+      "jay-babu/mason-nvim-dap.nvim",
     },
     config = function()
       local dap_python = require("dap-python")
-      dap_python.setup("python3")
+      local path = vim.fn.stdpath("data") .. "/mason/packages/debugpy/venv/bin/python"
+      if vim.fn.filereadable(path) == 0 then
+        path = "python3"
+      end
+      dap_python.setup(path)
     end,
   },
 
@@ -37,6 +48,7 @@ return {
     "nvim-neotest/neotest",
     dependencies = {
       "nvim-neotest/neotest-python",
+      "nvim-neotest/nvim-nio",
     },
     opts = {
       adapters = {
@@ -45,10 +57,5 @@ return {
         },
       },
     },
-  },
-  -- nvim-nio for pytest
-  {
-    "nvim-neotest/nvim-nio",
-    lazy = true,
   },
 }
