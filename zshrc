@@ -116,7 +116,7 @@ export FZF_DEFAULT_OPTS="--color=fg:${fg},bg:${bg},hl:${purple},fg+:${fg},bg+:${
 
 # ----- Bat (better cat) -----
 
-export BAT_THEME=tokyonight_night
+export BAT_THEME="Catppuccin Mocha"
 
 # Fzf-previews
 show_file_or_dir_preview="if [ -d {} ]; then eza --tree --color=always {} | head -200; else bat -n --color=always --line-range :500 {}; fi"

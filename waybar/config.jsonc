@@ -172,7 +172,7 @@
     "dynamic-order": ["artist", "title"],
     "status-icons": {
 		  "paused": "▶",
-      "playing": "⏸"
+      "playing": "⏸ "
   	},
     "max-length": 40
   }
