@@ -96,7 +96,7 @@
     "tooltip-format-disconnected": "Disconnected",
     "interval": 3,
     "spacing": 1,
-    "on-click": "omarchy-launch-wifi"
+    "on-click": "alacritty -e nmtui"
   },
   "battery": {
     "format": "{icon} {capacity}%",
