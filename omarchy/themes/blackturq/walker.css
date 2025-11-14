@@ -10,3 +10,14 @@
 @define-color border #8FECD5;
 @define-color foreground #e0dfdb;
 @define-color background #0a0a0a;
+
+window .search-container,
+window .search {
+  color: @foreground;
+  border: 1px solid alpha(@border, 0.5);
+  border-radius: 12px;
+  padding: 8px 12px;
+  margin: 4px 0;
+  font-size: 14px;
+  font-weight: 500;
+}
