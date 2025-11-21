@@ -1,81 +1,40 @@
-# Theme: Bold Marker Neo Dark
-# By: MAV
-
-# Main bg
-theme[main_bg]="#191515"
-
-# Main text color
-theme[main_fg]="#F9F9F8"
-
-# Title color for boxes
-theme[title]="#F9F9F8"
-
-# Highlight color for keyboard shortcuts
+# Palette Forge btop theme — Neo Sploosh Dark
+theme[main_bg]="#222222"
+theme[main_fg]="#F2F2F2"
+theme[title]="#F2F2F2"
 theme[hi_fg]="#008DC9"
-
-# Background color of selected item in processes box
-theme[selected_bg]="hsla(30, 5%, 28%, 1.00)
-
-# Foreground color of selected item in processes box
-theme[selected_fg]="#F9F9F8"
-
-# Color of inactive/disabled text
-theme[inactive_fg]="#8D887C"
-
-# Misc colors for processes box including mini cpu graphs, details memory graph and details status text
+theme[selected_bg]="#2C2C2C"
+theme[selected_fg]="#008DC9"
+theme[inactive_fg]="#7A7A7A"
+theme[graph_text]="#F2F2F2"
+theme[meter_bg]="#1C1C1C"
 theme[proc_misc]="#008DC9"
-
-# Cpu box outline color
-theme[cpu_box]="#4E4A47"
-
-# Memory/disks box outline color
-theme[mem_box]="#4E4A47"
-
-# Net up/down box outline color
-theme[net_box]="#4E4A47"
-
-# Processes box outline color
-theme[proc_box]="#4E4A47"
-
-# Box divider line and small boxes line color
-theme[div_line]="#4E4A47"
-
-# Temperature graph colors
-theme[temp_start]="#605E58"
-theme[temp_mid]="#8D887C"
-theme[temp_end]="#BAB5AB"
-
-# CPU graph colors
-theme[cpu_start]="#4E4A47"
-theme[cpu_mid]="#76746A"
-theme[cpu_end]="#BAB5AB"
-
-# Mem/Disk free meter
-theme[free_start]="#4E4A47"
-theme[free_mid]="#8D887C"
-theme[free_end]="#D0CEC5"
-
-# Mem/Disk cached meter
-theme[cached_start]="#605E58"
-theme[cached_mid]="#8D887C"
-theme[cached_end]="#D0CEC5"
-
-# Mem/Disk available meter
-theme[available_start]="#A29B91"
-theme[available_mid]="#BAB5AB"
-theme[available_end]="#ECEAE2"
-
-# Mem/Disk used meter
-theme[used_start]="#4E4A47"
+theme[cpu_box]="#384654"
+theme[mem_box]="#384654"
+theme[net_box]="#384654"
+theme[proc_box]="#384654"
+theme[div_line]="#384654"
+theme[temp_start]="#008DC9"
+theme[temp_mid]="#E4EB17"
+theme[temp_end]="#008DC9"
+theme[cpu_start]="#2da8db"
+theme[cpu_mid]="#008DC9"
+theme[cpu_end]="#008DC9"
+theme[free_start]="#2da8db"
+theme[free_mid]="#F2F2F2"
+theme[free_end]="#F2F2F2"
+theme[cached_start]="#1C1C1C"
+theme[cached_mid]="#555555"
+theme[cached_end]="#7A7A7A"
+theme[available_start]="#008DC9"
+theme[available_mid]="#2da8db"
+theme[available_end]="#2da8db"
+theme[used_start]="#008DC9"
 theme[used_mid]="#008DC9"
-theme[used_end]="#62A9C7"
-
-# Download graph colors
-theme[download_start]="#004765"
-theme[download_mid]="#0076A7"
-theme[download_end]="#62A9C7"
-
-# Upload graph colors
+theme[used_end]="#E4EB17"
+theme[download_start]="#008DC9"
+theme[download_mid]="#2da8db"
+theme[download_end]="#2da8db"
 theme[upload_start]="#008DC9"
-theme[upload_mid]="#62A9C7"
-theme[upload_end]="#ABCADA"
+theme[upload_mid]="#008DC9"
+theme[upload_end]="#E4EB17"

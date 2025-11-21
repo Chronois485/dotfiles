@@ -1,36 +1,67 @@
-# name: Bold Marker Neo Dark
-# author: MAV
-# description: Dark Splatoon Bold Marker Neo palette with steel neutrals and cyan accent
-# version: 0.1
+# Palette Forge generated Alacritty palette for Neo Sploosh Dark
 
 [colors.primary]
-background = '#191515'
-foreground = '#F9F9F8'
+background = "#212226"
+foreground = "#f4f4f4"
+dim_foreground = "#f4f4f4"
+bright_foreground = "#f4f4f4"
 
 [colors.cursor]
-text = '#191515'
-cursor = '#008DC9'
+text = "#222222"
+cursor = "#008DC9"
+
+[colors.vi_mode_cursor]
+text = "#222222"
+cursor = "#008DC9"
 
 [colors.selection]
-background = '#33312E'
-text = '#F9F9F8'
+text = "#F2F2F2"
+background = "#2C2C2C"
+
+[colors.search.matches]
+foreground = "#222222"
+background = "#008DC9"
+
+[colors.search.focused_match]
+foreground = "#222222"
+background = "#2C2C2C"
+
+[colors.footer_bar]
+foreground = "#222222"
+background = "#008DC9"
+
+[colors.hints.start]
+foreground = "#222222"
+background = "#008DC9"
+
+[colors.hints.end]
+foreground = "#222222"
+background = "#2C2C2C"
 
 [colors.normal]
-black   = '#191515'
-red     = '#604E47'
-green   = '#76746A'
-yellow  = '#A29B91'
-blue    = '#008DC9'
-magenta = '#62A9C7'
-cyan    = '#0076A7'
-white   = '#D0CEC5'
+black = "#282828"
+red = "#893151"
+green = "#92bf38"
+yellow = "#a4d149"
+blue = "#008dc9"
+magenta = "#48b7e7"
+cyan = "#33acde"
+white = "#e9e9e9"
 
 [colors.bright]
-black   = '#33312E'
-red     = '#4E4A47'
-green   = '#8D887C'
-yellow  = '#BAB5AB'
-blue    = '#62A9C7'
-magenta = '#ABCADA'
-cyan    = '#0076A7'
-white   = '#ECEAE2'
+black = "#595959"
+red = "#a35b78"
+green = "#b0db90"
+yellow = "#b0db90"
+blue = "#2ea5d7"
+magenta = "#48b7e7"
+cyan = "#33acde"
+white = "#f8f8f8"
+
+[[colors.indexed_colors]]
+index = 16
+color = "#008dc9"
+
+[[colors.indexed_colors]]
+index = 17
+color = "#008dc9"
