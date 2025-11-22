@@ -151,5 +151,3 @@ export PATH="$PATH:/opt/Telegram"
 
 figlet -f slant -t -c "CHRONOiS"
 figlet -f smslant -t -c '" i " is silent'
-
-. "$HOME/.local/share/../bin/env"
