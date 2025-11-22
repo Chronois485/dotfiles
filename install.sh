@@ -6,19 +6,19 @@ cp "~/.config/walker" "~/.config/walker.bak" -r
 cp "~/.config/waybar" "~/.config/waybar.bak" -r
 cp "~/.zshrc" "~/.zshrc.bak"
 echo "Deleting old config"
-rm "~/.config/hypr" -r
-rm "~/.config/nvim" -r
-rm "~/.config/omarchy" -r
-rm "~/.config/walker" -r
-rm "~/.config/waybar" -r
-rm "~/.zshrc"
+rm ~/.config/hypr -r
+rm ~/.config/nvim -r
+rm ~/.config/omarchy -r
+rm ~/.config/walker -r
+rm ~/.config/waybar -r
+rm ~/.zshrc
 echo "Applying new config"
-cp "./hypr" "~/.config/hypr" -r
-cp "./nvim" "~/.config/nvim" -r
-cp "./omarchy" "~/.config/omarchy" -r
-cp "./walker" "~/.config/walker" -r
-cp "./waybar" "~/.config/waybar" -r
-cp "./zshrc" "~/.zshrc"
+cp ./hypr ~/.config/hypr -r
+cp ./nvim ~/.config/nvim -r
+cp ./omarchy ~/.config/omarchy -r
+cp ./walker ~/.config/walker -r
+cp ./waybar ~/.config/waybar -r
+cp ./zshrc ~/.zshrc
 echo "Launching full system update"
 sudo pacman -Syu --noconfirm
 echo "Installing needed packages"
