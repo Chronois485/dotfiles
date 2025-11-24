@@ -23,7 +23,7 @@ cp ./fonts/* ~/.local/share/fonts/
 echo "Launching full system update"
 sudo pacman -Syu --noconfirm
 echo "Installing needed packages"
-sudo pacman -S --noconfirm zsh cava cmatrix fzf thefuck eza zoxide walker waybar neovim elephant python npm nodejs lua figlet btop networkmanager
+sudo pacman -S --noconfirm zsh cava cmatrix fzf thefuck eza zoxide walker waybar neovim elephant python npm nodejs lua figlet btop networkmanager rust proton-vpn-gtk-app telegram-desktop
 echo "Installing AUR packages"
 yay -S --noconfirm tenki gazelle-tui
 echo "Setting zsh as main terminal"
