@@ -145,9 +145,5 @@ alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time
 # thefuck alias
 eval $(thefuck --alias)
 
-# PATH VARIABLES
-export PATH="$PATH:/opt/balena-etcher"
-export PATH="$PATH:/opt/Telegram"
-
 figlet -f slant -t -c "CHRONOiS"
 figlet -f smslant -t -c '" i " is silent'
