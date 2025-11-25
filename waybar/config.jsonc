@@ -111,7 +111,7 @@
     "tooltip-format-discharging": "{power:>1.0f}W↓ {capacity}%\n{time}",
     "tooltip-format-charging": "{power:>1.0f}W↑ {capacity}%\n{time}",
     "interval": 5,
-    "on-click": "omarchy-menu power",
+    "on-click": "tlpui",
     "states": {
       "warning": 20,
       "critical": 10
