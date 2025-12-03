@@ -141,6 +141,7 @@ _fzf_comprun() {
 # ---- Eza (better ls) -----
 
 alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
+alias mindustry="env SDL_VIDEODRIVER=x11 mindustry"
 
 # thefuck alias
 eval $(thefuck --alias)
